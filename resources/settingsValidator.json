@@ -1,0 +1,53 @@
+{
+   "$schema": "http://json-schema.org/draft-04/schema#",
+   "type": "object",
+   "properties":
+   {
+      "Board":{
+         "description":"Board settings",
+         "type": "object",
+         "properties": {
+            "Row":{
+               "description":"Board row size(min 7, max 10).",
+               "type": "number",
+               "minimum": 7,
+               "maximum": 10
+            },
+            "Column":{
+               "description":"Board column size(min 7, max 10).",
+               "type": "number",
+               "minimum": 7,
+               "maximum": 10
+            }
+         }
+      },
+      "MovesCount" :{
+         "description":"Moves count.",
+         "type": "number"
+      },
+      "Objectives" : {
+         "description" : "Objectives count (max 3) their colors and values. i.e. 10 red, 12 green, 20 blue.",
+         "type" : "array",
+         "items" : {
+            "type" : "object",
+            "properties": {
+               "Color":{
+                  "type": "string",
+                  "pattern" : "(Red|Green|Blue|Orange|Violet)"
+               },
+               "Value" : {
+                  "type" : "number"
+               }
+            }
+         },
+         "minItems" : 1,
+         "maxItems" : 3
+      },
+      "FiguresColors": {
+         "description": "Figures colors count. (min 3, max 5)",
+         "type" : "number",
+         "minimum": 3,
+         "maximum": 5
+      }
+   }
+}

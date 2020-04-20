@@ -1,0 +1,11 @@
+{
+    "GameSettings":{
+        "BoardSize":{
+            "row":7,
+            "column":8
+        },
+        "MovesCount":20,
+        "OjectivesCount":3,
+        "FiguresColorsCount":4
+    }
+}

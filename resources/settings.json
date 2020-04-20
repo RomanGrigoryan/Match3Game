@@ -1,0 +1,13 @@
+{
+   "Board" :{
+      "Row" : 8,
+      "Column": 9
+      },
+   "MovesCount" :  10,
+   "Objectives" :[
+      {"Color": "Red", "Value": 50 },
+      {"Color": "Blue", "Value": 50 },
+      {"Color": "Orange", "Value": 50 }
+   ],
+   "FiguresColors": 3
+}
